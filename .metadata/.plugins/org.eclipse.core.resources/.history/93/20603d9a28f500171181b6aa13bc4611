@@ -1,0 +1,11 @@
+package com.main;
+
+public class subimple implements sub {
+
+	@Override
+	public int add(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

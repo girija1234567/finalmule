@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;apdev_employee-ws/src/main/app/apdev_employee-ws.xml&apos; to &apos;implementation.xml&apos;" description="Rename resource &apos;apdev_employee-ws.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/apdev_employee-ws.xml" name="implementation.xml" stamp="1514864804783" updateReferences="true"/>
+</session>

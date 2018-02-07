@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;orchard/src/main/app/orchard.xml&apos; to &apos;implementation.xml&apos;" description="Rename resource &apos;orchard.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/orchard.xml" name="implementation.xml" stamp="1515582548146" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;orchard/src/main/app/orchard.xml&apos; to &apos;interface.xml&apos;" description="Rename resource &apos;orchard.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/orchard.xml" name="interface.xml" stamp="1515582737639" updateReferences="true"/>
+</session>

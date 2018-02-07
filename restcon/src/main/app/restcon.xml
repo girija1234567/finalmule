@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" host="localhost" port="8014" basePath="restfulexm" doc:name="HTTP Request Configuration" responseTimeout="1000000000">
+        <http:proxy host="172.17.2.218" port="8085" username="M1043068" password="Hemu_123"/>
+    </http:request-config>
+    <flow name="restconFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/rest" allowedMethods="GET" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/webapi/myresource" method="GET" doc:name="HTTP"/>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:cluster="http://www.mulesoft.org/schema/mule/ee/cluster" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd">
+   
+   
+    <configuration defaultExceptionStrategy-ref="restconsumeownChoice_Exception_Strategy" doc:name="Configuration">
+    
+        <expression-language>
+        	<global-functions>
+        		def.getNumSeats(type){
+        			if(type.contains('737')){
+        				return 150;
+        				}
+        				else
+        				{
+        				return 300;
+        				}
+        			}
+        	</global-functions>
+        </expression-language>
+    </configuration>
+    
+    
+    
+    <http:listener-config name="HTTP_Listener_Configuration1" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_raml-config" host="mu.mulesoft-training.com" port="80" doc:name="HTTP Request Configuration">
+        <http:proxy host="172.17.2.218" port="8085" username="M1043068" password="Hemu_123"/>
+    </http:request-config>
+    <ws:consumer-config name="Web_Service_Consumer1" wsdlLocation="http://mu.mulesoft-training.com/essentials/delta?wsdl" service="TicketServiceService" port="TicketServicePort" serviceAddress="http://training-u.cloudhub.io/essentials/delta" connectorConfig="HTTP_Request_raml-config" doc:name="Web Service Consumer"/>
+    <payload-type-filter expectedType="java.util.List" name="Payload1" doc:name="Payload"/>
+
+<choice-exception-strategy name="restconsumeownChoice_Exception_Strategy" >
+        <catch-exception-strategy doc:name="No Flights-DW exception" when="#[exception.causeMatches('com.mulesoft.weave.*')||exception.message=='payload is empty'.]">
+            <set-payload value="No Flights to #[flowVars.code +'\n' + exception]" doc:name="Set Payload"/>
+            <set-property propertyName="http.status" value="400" doc:name="Property"/>
+            <logger level="INFO" doc:name="Logger"/>
+        </catch-exception-strategy>
+        <catch-exception-strategy doc:name="Data Unavialble-allother">
+                <set-payload value="Data is unavailable. Try Later.#['\n' + exception]" doc:name="Set Payload"/>
+                <set-property propertyName="http.status" value="500" doc:name="Property"/>
+                <logger level="INFO" doc:name="Logger"/>
+            </catch-exception-strategy>
+    </choice-exception-strategy>
+
+
+
+
+
+
+</mule>

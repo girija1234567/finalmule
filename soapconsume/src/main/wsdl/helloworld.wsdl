@@ -1,0 +1,47 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://main.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="IHelloServiceService" targetNamespace="http://main.com/">
+<wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://main.com/" elementFormDefault="unqualified" targetNamespace="http://main.com/" version="1.0">
+<xs:element name="hiService" type="tns:hiService"/>
+<xs:element name="hiServiceResponse" type="tns:hiServiceResponse"/>
+<xs:complexType name="hiService">
+<xs:sequence>
+<xs:element minOccurs="0" name="arg0" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="hiServiceResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="return" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="hiServiceResponse">
+<wsdl:part element="tns:hiServiceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="hiService">
+<wsdl:part element="tns:hiService" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:portType name="IHelloService">
+<wsdl:operation name="hiService">
+<wsdl:input message="tns:hiService" name="hiService"></wsdl:input>
+<wsdl:output message="tns:hiServiceResponse" name="hiServiceResponse"></wsdl:output>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="IHelloServiceServiceSoapBinding" type="tns:IHelloService">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="hiService">
+<soap:operation soapAction="" style="document"/>
+<wsdl:input name="hiService">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="hiServiceResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="IHelloServiceService">
+<wsdl:port binding="tns:IHelloServiceServiceSoapBinding" name="IHelloServicePort">
+<soap:address location="http://localhost:8081/soap"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

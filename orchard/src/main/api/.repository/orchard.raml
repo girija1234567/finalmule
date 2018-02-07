@@ -1,0 +1,100 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/880018e3-985d-4243-9633-bc7f8ae93c20 # 
+title: ORCHARD
+/campusmind:
+  get:
+   responses: 
+     200:
+       body: 
+         application/json:
+           example: |
+             [{"mid": 1,"email":"abc.b@gmail.com","name":"abc",
+               "lead_FK":3,"reference":2},{"mid": 2,"email":"xyz.b@gmail.com","name":"xyz",
+               "lead_FK":4,"reference":3}]
+
+
+  post:
+    body: 
+      application/json:
+        example: |
+          {"mid": 1,"email":"abc.b@gmail.com","name":"abc",
+               "lead_FK":3,"reference":2}
+
+      
+    responses: 
+      201:
+        body: 
+          application/json:
+            example:
+              {"message":"campusmind added(but not really)"}
+  /{ID}:
+   get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+             {"mid": 1,"email":"abc.b@gmail.com","name":"abc",
+               "lead_FK":3,"reference":2}
+/lead:
+  get:
+   responses: 
+     200:
+       body: 
+         application/json:
+           example: |
+             [{"L_Id": 1,"lid":2,"lname":"abc"},{"L_Id": 2,"lid":3,"lname":"xyz"}]
+
+
+  post:
+    body: 
+      application/json:
+        example: |
+          {"L_Id": 1,"lid":2,"lname":"abc"}
+
+      
+    responses: 
+      201:
+        body: 
+          application/json:
+            example:
+              {"message":"lead added(but not really)"}
+  /{ID}:
+   get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+             {"L_Id": 1,"lid":2,"lname":"abc"}
+/minddetails:
+  get:
+   responses: 
+     200:
+       body: 
+         application/json:
+           example: |
+             [ {"id": 1,"hometown":"abcdabcd","pincode":1234}, {"id": 2,"hometown":"xyzxyz",                      "pincode":121212}]
+
+
+  post:
+    body: 
+      application/json:
+        example: |
+          {"id": 1,"hometown":"abcdabcd","pincode":1234}
+
+      
+    responses: 
+      201:
+        body: 
+          application/json:
+            example:
+              {"message":"lead added(but not really)"}
+  /{ID}:
+   get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+              {"id": 1,"hometown":"abcdabcd","pincode":1234}

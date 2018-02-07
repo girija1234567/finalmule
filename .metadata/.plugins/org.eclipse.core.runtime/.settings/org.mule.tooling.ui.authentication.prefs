@@ -1,0 +1,5 @@
+authenticated.users=[{"token"\:"ad69d440-4159-4d10-93f0-f25546797ae2","userId"\:"girijageethu","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=ad69d440-4159-4d10-93f0-f25546797ae2
+current.user=girijageethu
+eclipse.preferences.version=1
+org.mule.tooling.amc.apps={"userProjectMap"\:{"girijageethu"\:{"employeews"\:"{\\"applicationName\\"\:\\"employeews-batta\\",\\"muleRuntime\\"\:\\"3.8.0\\",\\"properties\\"\:{\\"env\\"\:\\"ws\\"}}"}}}

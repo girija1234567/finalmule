@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration1" host="0.0.0.0" port="8080" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration2" host="0.0.0.0" port="8099" doc:name="HTTP Listener Configuration"/>
+    <flow name="base1Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
+        <set-variable variableName="operation" value="#[message.inboundProperties.'http.query.params'.operation]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.operation==&quot;add&quot;]">
+                <vm:outbound-endpoint exchange-pattern="one-way" path="vmq" doc:name="VM"/>
+            </when>
+            <otherwise>
+                <vm:outbound-endpoint exchange-pattern="one-way" path="vmq1" doc:name="VM"/>
+            </otherwise>
+        </choice>
+    </flow>
+    <flow name="base1Flow2">
+        <vm:inbound-endpoint exchange-pattern="one-way" path="vmq" doc:name="VM"/>
+        <set-variable variableName="a" value="10" doc:name="Variable"/>
+        <set-variable variableName="b" value="5" doc:name="Variable"/>
+        <component class="com.main.subimple" doc:name="Java"/>
+    </flow>
+    <flow name="base1Flow1">
+        <vm:inbound-endpoint exchange-pattern="one-way" path="vmq" doc:name="VM"/>
+        <set-variable variableName="a" value="10" doc:name="Variable"/>
+        <set-variable variableName="b" value="5" doc:name="Variable"/>
+        <component class="com.main.implementation" doc:name="Java"/>
+    </flow>
+</mule>

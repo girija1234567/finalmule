@@ -1,0 +1,75 @@
+#%RAML 1.0
+version: v1
+baseUri: https://mocksvc.mulesoft.com/mocks/e144487e-543b-4885-a837-c2ea0962e59c # 
+title: americanflights
+
+/flights:
+  get:
+    responses: 
+      200:
+        body:
+          application/json:
+            example: |
+              [{
+                  "ID": 1,
+                  "code": "GQ574",
+                  "price": 399,
+                  "departureDate": "2017/1/20",
+                  "origin": "MUA",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+                },{
+                  "ID": 2,
+                  "code": "GR685",
+                  "price": 499,
+                  "departureDate": "2018/2/20",
+                  "origin": "ORD",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+                }]
+  post:
+    body: 
+      application/json:
+        example: |
+           {
+                  "code": "GQ574",
+                  "price": 399,
+                  "departureDate": "2016/12/20",
+                  "origin": "ORD",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+                }
+
+    responses: 
+      201:
+        body: 
+          application/json:
+            example: |
+              { "message": "Flight added(but not really)"}
+
+
+
+
+
+  /{Id}:
+    get:
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {
+                  "ID": 1,
+                  "code": "GQ574",
+                  "price": 399,
+                  "departureDate": "2016/12/20",
+                  "origin": "ORD",
+                  "destination": "SFO",
+                  "emptySeats": 200,
+                  "plane": {"type": "Boeing 747", "totalSeats": 400}
+                }
+
+        

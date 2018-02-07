@@ -1,0 +1,2029 @@
+2018-01-22 09:21:05,015 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:05,156 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:21:05,234 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:21:05,468 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:21:05,468 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:21:05,593 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3dd69f5a: startup date [Mon Jan 22 09:21:05 IST 2018]; root of context hierarchy
+2018-01-22 09:21:06,765 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:21:07,366 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:21:07,959 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:21:08,004 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:21:08,004 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:21:08,113 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:21:08,129 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:21:08,129 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@57e388c3
+2018-01-22 09:21:08,144 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:21:08,363 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:21:08,363 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:21:11,394 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:11,401 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:21:11,401 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:21:11,450 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:21:11,481 [main] ERROR org.mule.retry.notifiers.ConnectNotifier - Failed to connect/reconnect: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=7d986d83
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=false
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+. Root Exception was: org.apache.activemq.ActiveMQConnectionFactory. Type: class java.lang.ClassNotFoundException
+2018-01-22 09:21:11,481 [main] ERROR org.mule.module.launcher.application.DefaultMuleApplication - org.apache.activemq.ActiveMQConnectionFactory (java.lang.ClassNotFoundException)
+2018-01-22 09:21:11,481 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apache-active-mq-jms'                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:11,481 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-22 09:21:11,481 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-mq-jmsFlow
+2018-01-22 09:21:11,481 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:21:11,481 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-22 09:21:11,496 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ
+2018-01-22 09:21:11,606 [main] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@3dd69f5a: startup date [Mon Jan 22 09:21:05 IST 2018]; root of context hierarchy
+2018-01-22 09:21:11,700 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apache-active-mq-jms" shut down normally on: 1/22/18  *
+* 9:21 AM                                                            *
+* Up for: 0 days, 0 hours, 0 mins, 0.306 sec                         *
+**********************************************************************
+2018-01-22 09:21:53,071 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:53,244 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:21:53,338 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:21:53,416 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:21:53,416 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:21:53,463 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:21:53 IST 2018]; root of context hierarchy
+2018-01-22 09:21:54,510 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:21:55,077 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:21:55,655 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:21:55,671 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:21:55,686 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:21:55,780 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:21:55,780 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:21:55,780 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3610f277
+2018-01-22 09:21:55,796 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:21:56,171 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:21:56,171 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:21:59,212 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:59,218 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:21:59,218 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:21:59,280 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:21:59,733 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=68e02f33
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:21:59,733 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=68e02f33
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:21:59,733 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:21:59,733 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:21:59,749 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:21:59,749 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:21:59,749 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:21:59,780 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:21:59,796 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:21:59,796 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:25:18,968 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:25:18,968 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:25:18,969 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:25:18,969 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.1785973194'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:25:18,970 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.1785973194'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:28:21,198 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:28:21,356 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:28:21,438 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:28:21,520 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:28:21,521 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:28:21,554 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:28:21 IST 2018]; root of context hierarchy
+2018-01-22 09:28:22,626 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:28:23,228 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:28:23,768 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:28:23,778 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:28:23,778 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:28:23,809 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:28:23,825 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:28:23,907 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:28:23,907 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:28:23,907 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5995851e
+2018-01-22 09:28:23,923 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:28:23,938 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:28:23,938 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@28e0e464
+2018-01-22 09:28:23,938 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:28:24,155 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:28:24,155 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:28:27,181 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:28:27,197 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:28:27,197 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:28:27,258 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:28:27,538 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=5d94a2dc
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,538 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=5d94a2dc
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,538 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:28:27,554 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=60aec68a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,554 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=60aec68a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,554 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:28:27,554 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=4d157493
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,554 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=4d157493
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:28:27,554 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:28:27,554 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:28:27,570 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:28:27,570 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:28:27,570 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:28:27,570 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:28:27,570 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:28:27,601 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:28:27,624 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:28:27,624 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:28:27,624 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:28:27,624 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:28:27,679 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:28:27,680 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:28:27,680 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:28:27,686 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:28:27,703 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:28:27,704 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:28:27,705 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:28:27,705 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:28:27,705 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:28:27,709 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:28:27,741 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.593071204'. Object is: FileMessageDispatcher
+2018-01-22 09:28:27,774 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.593071204'. Object is: FileMessageDispatcher
+2018-01-22 09:28:27,778 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\src\main\resources\out\80805c00-ff28-11e7-be2e-98eecb1e3fba.dat
+2018-01-22 09:28:39,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:28:39,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:28:39,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:28:39,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.679297142'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:28:39,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.679297142'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:28:39,433 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\src\main\resources\out\87731392-ff28-11e7-be2e-98eecb1e3fba.dat
+2018-01-22 09:31:02,809 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:31:02,923 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:31:03,018 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:31:03,100 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:31:03,100 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:31:03,140 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:31:03 IST 2018]; root of context hierarchy
+2018-01-22 09:31:04,181 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:31:04,778 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:31:05,391 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:31:05,394 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:31:05,394 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:31:05,426 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:31:05,441 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:31:05,514 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:31:05,517 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:31:05,518 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@252744a1
+2018-01-22 09:31:05,537 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:31:05,538 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:31:05,538 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7499eac7
+2018-01-22 09:31:05,538 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:31:05,702 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:31:05,702 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:31:08,747 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:31:08,752 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:31:08,752 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:31:08,809 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=2e13f304
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=2e13f304
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=fe87ddd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=fe87ddd
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3a17b2e3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3a17b2e3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:31:09,101 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:31:09,101 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:31:09,101 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:31:09,101 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:31:09,101 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:31:09,118 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:31:09,118 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:31:09,140 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:31:09,202 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:31:09,202 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:31:09,202 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:31:09,202 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:31:09,250 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:31:09,251 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:31:09,251 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:31:09,256 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:31:09,270 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:31:09,270 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:31:09,271 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:31:09,271 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:31:09,271 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:31:09,274 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:31:13,531 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:31:13,532 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:31:13,532 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:31:13,532 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.731761657'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:31:13,532 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.731761657'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:31:13,580 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.625487474'. Object is: FileMessageDispatcher
+2018-01-22 09:31:13,580 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.625487474'. Object is: FileMessageDispatcher
+2018-01-22 09:31:13,596 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\out\e3567bc0-ff28-11e7-8c9e-98eecb1e3fba.dat
+2018-01-22 09:32:21,010 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:32:21,163 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:32:21,259 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:32:21,335 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:32:21,335 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:32:21,386 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:32:21 IST 2018]; root of context hierarchy
+2018-01-22 09:32:22,622 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:32:23,214 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:32:23,779 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:32:23,788 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:32:23,788 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:32:23,835 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:32:23,850 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:32:23,906 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:32:23,906 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:32:23,906 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1624775
+2018-01-22 09:32:23,938 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:32:23,938 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:32:23,938 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@79eeff87
+2018-01-22 09:32:23,938 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:32:24,146 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:32:24,146 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:32:27,180 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:32:27,183 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:32:27,183 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:32:27,230 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:32:27,523 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6274670b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,523 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6274670b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,523 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:32:27,529 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=65f40689
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,529 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=65f40689
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,529 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:32:27,529 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=640cc04b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,529 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=640cc04b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:32:27,529 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:32:27,531 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:32:27,534 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:32:27,535 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:32:27,535 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:32:27,539 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:32:27,539 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:32:27,554 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:32:27,570 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:32:27,570 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:32:27,570 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:32:27,570 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:32:27,624 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:32:27,624 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:32:27,624 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:32:27,624 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:32:27,640 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:32:27,640 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:32:27,640 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:32:27,640 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:32:27,640 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:32:27,640 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:32:32,020 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:32:32,020 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:32:32,021 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:32:32,021 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.1260239436'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:32:32,021 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.1260239436'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:32:32,054 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1156712473'. Object is: FileMessageDispatcher
+2018-01-22 09:32:32,070 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1156712473'. Object is: FileMessageDispatcher
+2018-01-22 09:32:32,070 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\out\121caa60-ff29-11e7-8a33-98eecb1e3fba.dat
+2018-01-22 09:38:11,114 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:38:11,255 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:38:11,333 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:38:11,411 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:38:11,411 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:38:11,458 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:38:11 IST 2018]; root of context hierarchy
+2018-01-22 09:38:12,614 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:38:13,263 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:38:13,825 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:38:13,830 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:38:13,830 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:38:13,862 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:38:13,877 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ2
+2018-01-22 09:38:13,893 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ3
+2018-01-22 09:38:13,924 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:38:14,049 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:38:14,049 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:38:14,049 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6f5e16cf
+2018-01-22 09:38:14,065 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:38:14,080 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:38:14,080 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@36790bec
+2018-01-22 09:38:14,080 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:38:14,080 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-topic-jmsFlow
+2018-01-22 09:38:14,080 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3a36cd5
+2018-01-22 09:38:14,080 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:38:14,080 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow2
+2018-01-22 09:38:14,080 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@183ade54
+2018-01-22 09:38:14,080 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:38:14,268 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:38:14,268 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:38:17,299 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:38:17,299 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:38:17,299 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:38:17,347 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:38:17,659 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6b6eae52
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,659 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=6b6eae52
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,659 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:38:17,659 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=65afeb6d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,659 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=65afeb6d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,659 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=642a16aa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=642a16aa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ2
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=416d56f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=416d56f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ3
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=78d9f51b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=78d9f51b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:38:17,675 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:38:17,691 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:38:17,691 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:38:17,691 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:38:17,691 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:38:17,691 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:38:17,691 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:38:17,706 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-topic-jmsFlow
+2018-01-22 09:38:17,706 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:38:17,706 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow2
+2018-01-22 09:38:17,706 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:38:17,738 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:38:17,738 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:38:17,738 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:38:17,738 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:38:17,738 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:38:17,784 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow2 on endpointUri: jms://topic:TestTopic
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:38:17,784 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 09:38:17,784 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:38:17,784 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:38:17,800 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ3"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ2"
+2018-01-22 09:38:17,816 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:38:28,519 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:38:28,519 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:38:28,519 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:38:28,519 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ2.dispatcher.613728331'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:38:28,519 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ2.dispatcher.613728331'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:38:28,570 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.739650645'. Object is: FileMessageDispatcher
+2018-01-22 09:38:28,585 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.739650645'. Object is: FileMessageDispatcher
+2018-01-22 09:38:28,585 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\outtop\e69c8990-ff29-11e7-a62b-98eecb1e3fba.dat
+2018-01-22 09:40:43,889 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:40:44,054 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:40:44,140 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:40:44,228 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:40:44,228 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:40:44,274 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:40:44 IST 2018]; root of context hierarchy
+2018-01-22 09:40:45,294 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:40:45,908 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 09:40:46,487 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:40:46,498 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:40:46,502 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:40:46,534 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:40:46,539 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ2
+2018-01-22 09:40:46,555 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ3
+2018-01-22 09:40:46,555 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ4
+2018-01-22 09:40:46,570 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:40:46,810 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:40:46,810 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:40:46,810 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@259b85d6
+2018-01-22 09:40:46,841 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:40:46,841 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:40:46,841 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7e15f4d4
+2018-01-22 09:40:46,841 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:40:46,841 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-topic-jmsFlow
+2018-01-22 09:40:46,841 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4da1f38a
+2018-01-22 09:40:46,841 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:40:46,841 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow2
+2018-01-22 09:40:46,857 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@306c7bf6
+2018-01-22 09:40:46,857 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:40:46,857 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow3
+2018-01-22 09:40:46,857 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5a1f778
+2018-01-22 09:40:46,857 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:40:47,031 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:40:47,031 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:40:50,055 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:jms://topic:TestTopic'. The previous object will be overwritten.
+2018-01-22 09:40:50,060 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:40:50,061 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:40:50,061 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:40:50,108 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:40:50,391 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=9c73fff
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,391 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=9c73fff
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,391 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:40:50,391 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,391 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,391 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:40:50,422 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=5ad1904f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,422 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=5ad1904f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,422 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ2
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=21bd128b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=21bd128b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ3
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=4c5a2baf
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=4c5a2baf
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ4
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=75fd65c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=75fd65c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:40:50,438 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:40:50,454 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:40:50,459 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:40:50,460 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:40:50,461 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:40:50,464 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:40:50,464 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:40:50,466 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-topic-jmsFlow
+2018-01-22 09:40:50,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:40:50,468 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow2
+2018-01-22 09:40:50,468 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:40:50,470 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow3
+2018-01-22 09:40:50,470 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:40:50,499 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:40:50,506 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:40:50,507 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:40:50,509 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,510 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:40:50,538 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow2 on endpointUri: jms://topic:TestTopic
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:40:50,538 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,538 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 09:40:50,554 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow3 on endpointUri: jms://topic:TestTopic
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:40:50,554 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:40:50,554 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 09:40:50,569 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:40:50,569 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:40:50,569 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ3"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ4"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:40:50,585 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ2"
+2018-01-22 09:40:50,600 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 09:40:55,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:40:55,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:40:55,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 09:40:55,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ2.dispatcher.338349033'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:40:55,422 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ2.dispatcher.338349033'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:40:55,479 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.746445262'. Object is: FileMessageDispatcher
+2018-01-22 09:40:55,479 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1053262623'. Object is: FileMessageDispatcher
+2018-01-22 09:40:55,483 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1053262623'. Object is: FileMessageDispatcher
+2018-01-22 09:40:55,484 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.746445262'. Object is: FileMessageDispatcher
+2018-01-22 09:40:55,493 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\outtop\3e2bd9e0-ff2a-11e7-ae88-98eecb1e3fba.dat
+2018-01-22 09:40:55,497 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\outtop1\3e2ceb50-ff2a-11e7-ae88-98eecb1e3fba.dat
+2018-01-22 09:45:11,199 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:45:11,200 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apache-active-mq-jmsFlow
+2018-01-22 09:45:11,200 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:45:11,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apache-active-mq-jmsFlow1
+2018-01-22 09:45:11,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Removing listener on endpointUri: jms://TestQueue
+2018-01-22 09:45:11,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:45:11,422 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apache-active-topic-jmsFlow
+2018-01-22 09:45:11,422 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:45:11,623 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apache-active-mq-jmsFlow2
+2018-01-22 09:45:11,623 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Removing listener on endpointUri: jms://topic:TestTopic
+2018-01-22 09:45:11,623 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:45:11,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apache-active-mq-jmsFlow3
+2018-01-22 09:45:11,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Removing listener on endpointUri: jms://topic:TestTopic
+2018-01-22 09:45:11,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:11,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:45:12,027 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-22 09:45:12,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ
+2018-01-22 09:45:12,030 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ1
+2018-01-22 09:45:12,031 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ2
+2018-01-22 09:45:12,032 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'Active_MQ2.dispatcher.338349033'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:45:12,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'Active_MQ2.dispatcher.338349033'. Object is: EeJmsMessageDispatcher
+2018-01-22 09:45:12,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ3
+2018-01-22 09:45:12,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ4
+2018-01-22 09:45:12,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-01-22 09:45:12,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.1053262623'. Object is: FileMessageDispatcher
+2018-01-22 09:45:12,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.1053262623'. Object is: FileMessageDispatcher
+2018-01-22 09:45:12,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.746445262'. Object is: FileMessageDispatcher
+2018-01-22 09:45:12,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.746445262'. Object is: FileMessageDispatcher
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apache-active-mq-jms'                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-mq-jmsFlow
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-mq-jmsFlow1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-topic-jmsFlow
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-mq-jmsFlow2
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apache-active-mq-jmsFlow3
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:45:12,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-22 09:45:12,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=9c73fff
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ
+2018-01-22 09:45:12,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=stop
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,055 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ1
+2018-01-22 09:45:12,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=stop
+  this=5ad1904f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ2
+2018-01-22 09:45:12,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=stop
+  this=21bd128b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ3
+2018-01-22 09:45:12,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=stop
+  this=4c5a2baf
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ4
+2018-01-22 09:45:12,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=75fd65c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:12,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-01-22 09:45:12,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 09:40:44 IST 2018]; root of context hierarchy
+2018-01-22 09:45:12,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apache-active-mq-jms" shut down normally on: 1/22/18  *
+* 9:45 AM                                                            *
+* Up for: 0 days, 0 hours, 4 mins, 22.235 sec                        *
+**********************************************************************
+2018-01-22 09:45:12,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:45:12,373 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app apache-active-mq-jms
+2018-01-22 09:45:12,390 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 09:45:12,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 09:45:12,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 09:45:12,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 09:45:12,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@25492d4f: startup date [Mon Jan 22 09:45:12 IST 2018]; root of context hierarchy
+2018-01-22 09:45:12,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 09:45:12,841 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 09:45:12,841 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 09:45:12,841 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 09:45:12,857 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 09:45:12,873 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ2
+2018-01-22 09:45:12,893 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ3
+2018-01-22 09:45:12,893 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ4
+2018-01-22 09:45:12,908 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@758529df
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@661c3115
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-topic-jmsFlow
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@123e6582
+2018-01-22 09:45:12,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:45:12,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow2
+2018-01-22 09:45:12,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3fb474ed
+2018-01-22 09:45:12,964 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:45:12,965 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow3
+2018-01-22 09:45:12,965 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e2658c8
+2018-01-22 09:45:12,969 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:45:12,993 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:45:12,993 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 09:45:16,000 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:jms://topic:TestTopic'. The previous object will be overwritten.
+2018-01-22 09:45:16,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:45:16,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 09:45:16,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 09:45:16,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 09:45:16,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=657fdeb5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=657fdeb5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=5dbe0a81
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=5dbe0a81
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=f4d5bb5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=f4d5bb5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,341 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ2
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=22d7e239
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=22d7e239
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ3
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=70bfdff8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=70bfdff8
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ4
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6fefffc3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6fefffc3
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 09:45:16,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-topic-jmsFlow
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-topic-jmsFlow.stage1
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow2
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow3
+2018-01-22 09:45:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 09:45:16,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 09:45:16,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:45:16,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:45:16,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow2 on endpointUri: jms://topic:TestTopic
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow3 on endpointUri: jms://topic:TestTopic
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ3"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ4"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ2"
+2018-01-22 09:45:16,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 12:46:04,352 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:46:04,540 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 12:46:04,633 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 12:46:04,727 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 12:46:04,727 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 12:46:04,790 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5003041b: startup date [Mon Jan 22 12:46:04 IST 2018]; root of context hierarchy
+2018-01-22 12:46:06,085 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 12:46:06,745 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 12:46:07,277 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 12:46:07,294 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 12:46:07,294 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 12:46:07,325 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 12:46:07,341 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ2
+2018-01-22 12:46:07,356 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ3
+2018-01-22 12:46:07,356 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ4
+2018-01-22 12:46:07,372 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 12:46:07,653 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 12:46:07,653 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 12:46:07,653 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@259b85d6
+2018-01-22 12:46:07,669 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 12:46:07,684 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 12:46:07,684 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7e15f4d4
+2018-01-22 12:46:07,684 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 12:46:07,684 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-topic-jmsFlow
+2018-01-22 12:46:07,684 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4da1f38a
+2018-01-22 12:46:07,700 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-topic-jmsFlow.stage1
+2018-01-22 12:46:07,700 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow2
+2018-01-22 12:46:07,700 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@306c7bf6
+2018-01-22 12:46:07,700 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 12:46:07,700 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow3
+2018-01-22 12:46:07,700 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5a1f778
+2018-01-22 12:46:07,700 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 12:46:07,872 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 12:46:07,872 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 12:46:10,905 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:jms://topic:TestTopic'. The previous object will be overwritten.
+2018-01-22 12:46:10,910 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:46:10,911 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 12:46:10,911 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 12:46:10,958 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 12:46:11,302 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=9c73fff
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,302 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=9c73fff
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,302 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 12:46:11,302 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,302 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=10b687f2
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,302 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 12:46:11,317 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=5ad1904f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,317 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=5ad1904f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,317 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ2
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=21bd128b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=21bd128b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ3
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=4c5a2baf
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=4c5a2baf
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ4
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=75fd65c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=75fd65c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 12:46:11,333 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 12:46:11,333 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 12:46:11,333 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 12:46:11,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 12:46:11,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 12:46:11,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 12:46:11,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 12:46:11,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-topic-jmsFlow
+2018-01-22 12:46:11,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-topic-jmsFlow.stage1
+2018-01-22 12:46:11,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow2
+2018-01-22 12:46:11,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 12:46:11,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow3
+2018-01-22 12:46:11,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 12:46:11,380 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 12:46:11,395 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 12:46:11,395 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 12:46:11,395 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,395 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 12:46:11,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow2 on endpointUri: jms://topic:TestTopic
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 12:46:11,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 12:46:11,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow3 on endpointUri: jms://topic:TestTopic
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 12:46:11,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 12:46:11,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 12:46:11,474 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 12:46:11,489 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ3"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ4"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 12:46:11,505 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ2"
+2018-01-22 12:46:11,520 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 15:44:16,759 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apache-active-mq-jms'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 15:44:16,888 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-22 15:44:16,990 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-22 15:44:17,066 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-22 15:44:17,066 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-22 15:44:17,097 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@72c927f1: startup date [Mon Jan 22 15:44:17 IST 2018]; root of context hierarchy
+2018-01-22 15:44:18,221 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-22 15:44:18,851 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-22 15:44:19,414 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-tx-log\tx2.log
+2018-01-22 15:44:19,427 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\.\.mule\apache-active-mq-jms\queue-xa-tx-log\tx2.log
+2018-01-22 15:44:19,427 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2018-01-22 15:44:19,458 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ1
+2018-01-22 15:44:19,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ2
+2018-01-22 15:44:19,489 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ3
+2018-01-22 15:44:19,505 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ4
+2018-01-22 15:44:19,505 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-22 15:44:19,583 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-22 15:44:19,583 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow
+2018-01-22 15:44:19,583 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1de0641b
+2018-01-22 15:44:19,645 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow.stage1
+2018-01-22 15:44:19,645 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow1
+2018-01-22 15:44:19,645 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6b9fdbc6
+2018-01-22 15:44:19,661 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 15:44:19,661 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-topic-jmsFlow
+2018-01-22 15:44:19,661 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@746c411c
+2018-01-22 15:44:19,661 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-topic-jmsFlow.stage1
+2018-01-22 15:44:19,661 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow2
+2018-01-22 15:44:19,661 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5b000fe6
+2018-01-22 15:44:19,661 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 15:44:19,661 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apache-active-mq-jmsFlow3
+2018-01-22 15:44:19,661 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@36776c32
+2018-01-22 15:44:19,661 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 15:44:19,816 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 15:44:19,816 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\final-master\.mule\apps\apache-active-mq-jms\apache-active-mq-jms.xml'}]"
+2018-01-22 15:44:22,848 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:jms://topic:TestTopic'. The previous object will be overwritten.
+2018-01-22 15:44:22,848 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apache-active-mq-jms'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 15:44:22,848 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-22 15:44:22,848 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-22 15:44:22,903 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-22 15:44:23,294 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=46046c06
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,294 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=46046c06
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,294 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2018-01-22 15:44:23,294 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=3520963d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,294 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ1
+  lifecycle=initialise
+  this=3520963d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,294 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ1
+2018-01-22 15:44:23,310 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=58a2d9f9
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,310 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ2
+  lifecycle=initialise
+  this=58a2d9f9
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,310 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ2
+2018-01-22 15:44:23,323 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=47c7a9e5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,323 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ3
+  lifecycle=initialise
+  this=47c7a9e5
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,323 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ3
+2018-01-22 15:44:23,330 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=3878be7b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,330 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ4
+  lifecycle=initialise
+  this=3878be7b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,330 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ4
+2018-01-22 15:44:23,330 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=64f9f455
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,330 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=64f9f455
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-22 15:44:23,330 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-22 15:44:23,332 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-22 15:44:23,335 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-22 15:44:23,336 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow
+2018-01-22 15:44:23,337 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow.stage1
+2018-01-22 15:44:23,340 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow1
+2018-01-22 15:44:23,340 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow1.stage1
+2018-01-22 15:44:23,341 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-topic-jmsFlow
+2018-01-22 15:44:23,342 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-topic-jmsFlow.stage1
+2018-01-22 15:44:23,344 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow2
+2018-01-22 15:44:23,344 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow2.stage1
+2018-01-22 15:44:23,345 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apache-active-mq-jmsFlow3
+2018-01-22 15:44:23,346 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apache-active-mq-jmsFlow3.stage1
+2018-01-22 15:44:23,374 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow1 on endpointUri: jms://TestQueue
+2018-01-22 15:44:23,383 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 15:44:23,383 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:44:23,385 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,386 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 15:44:23,429 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://TestQueue has been successfully reconnected.
+2018-01-22 15:44:23,429 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,429 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 15:44:23,429 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow2 on endpointUri: jms://topic:TestTopic
+2018-01-22 15:44:23,430 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 15:44:23,430 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 15:44:23,430 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:44:23,430 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,430 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 15:44:23,435 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 15:44:23,436 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,436 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 15:44:23,436 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Registering listener: apache-active-mq-jmsFlow3 on endpointUri: jms://topic:TestTopic
+2018-01-22 15:44:23,436 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Destination jms://topic:TestTopic is a topic, but 4 receivers have been requested. Will configure only 1.
+2018-01-22 15:44:23,436 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default inbound transformer: org.mule.transport.jms.transformers.JMSMessageToObject
+2018-01-22 15:44:23,436 [main] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:44:23,437 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,437 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Connecting clusterizable message receiver
+2018-01-22 15:44:23,439 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Endpoint jms://topic:TestTopic has been successfully reconnected.
+2018-01-22 15:44:23,439 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: MultiConsumerJmsMessageReceiver
+2018-01-22 15:44:23,439 [main] INFO  org.mule.transport.jms.MultiConsumerJmsMessageReceiver - Starting clusterizable message receiver
+2018-01-22 15:44:23,445 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-22 15:44:23,460 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 15:44:23,460 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow2",connector=Active_MQ3,name="endpoint.jms.TestTopic"
+2018-01-22 15:44:23,460 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 15:44:23,461 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow3",connector=Active_MQ4,name="endpoint.jms.TestTopic"
+2018-01-22 15:44:23,461 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 15:44:23,461 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apache-active-mq-jms:type=Endpoint,service="apache-active-mq-jmsFlow1",connector=Active_MQ1,name="endpoint.jms.TestQueue"
+2018-01-22 15:44:23,462 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ3"
+2018-01-22 15:44:23,463 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ4"
+2018-01-22 15:44:23,463 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="connector.file.mule.default"
+2018-01-22 15:44:23,463 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ1"
+2018-01-22 15:44:23,463 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ"
+2018-01-22 15:44:23,464 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apache-active-mq-jms:type=Connector,name="Active_MQ2"
+2018-01-22 15:44:23,466 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apache-active-mq-jms                                  *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-22 15:45:14,555 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/mq
+2018-01-22 15:45:14,555 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/jms/, ([post])/mq/]
+2018-01-22 15:45:23,546 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/mq
+2018-01-22 15:45:23,546 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/jms/, ([post])/mq/]
+2018-01-22 15:45:36,576 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:45:36,576 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:45:36,576 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 15:45:36,576 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.2050293414'. Object is: EeJmsMessageDispatcher
+2018-01-22 15:45:36,576 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.2050293414'. Object is: EeJmsMessageDispatcher
+2018-01-22 15:45:36,641 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.441262825'. Object is: FileMessageDispatcher
+2018-01-22 15:45:36,657 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.441262825'. Object is: FileMessageDispatcher
+2018-01-22 15:45:36,672 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\out\305d9410-ff5d-11e7-a784-98eecb1e3fba.dat
+2018-01-22 15:47:14,888 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\out\6aea7080-ff5d-11e7-a784-98eecb1e3fba.dat
+2018-01-22 15:47:49,789 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:47:49,789 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2018-01-22 15:47:49,790 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2018-01-22 15:47:49,790 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ2.dispatcher.736244477'. Object is: EeJmsMessageDispatcher
+2018-01-22 15:47:49,790 [[apache-active-mq-jms].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ2.dispatcher.736244477'. Object is: EeJmsMessageDispatcher
+2018-01-22 15:47:49,845 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.462853427'. Object is: FileMessageDispatcher
+2018-01-22 15:47:49,845 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.462853427'. Object is: FileMessageDispatcher
+2018-01-22 15:47:49,847 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.185806567'. Object is: FileMessageDispatcher
+2018-01-22 15:47:49,847 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.185806567'. Object is: FileMessageDispatcher
+2018-01-22 15:47:49,861 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\outtop\7fc09b60-ff5d-11e7-a784-98eecb1e3fba.dat
+2018-01-22 15:47:49,862 [[apache-active-mq-jms].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: C:\Users\EAI\AnypointStudio\workspace\final-master\apache-active-mq-jms\src\test\resources\outtop1\7fc15eb0-ff5d-11e7-a784-98eecb1e3fba.dat

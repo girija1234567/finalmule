@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <flow name="basicFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
+        <file:outbound-endpoint path="C:\Users\EAI\Desktop\source" responseTimeout="10000" doc:name="File"/>
+        <set-variable variableName="destination" value="#[message.inboundProperties.'http.query.params'.destination]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.destination==&quot;destination1&quot;]">
+                <file:outbound-endpoint path="C:\Users\EAI\Desktop\destination1" responseTimeout="10000" doc:name="destination1"/>
+                <set-payload value="now files are in destination1" doc:name="Set Payload"/>
+            </when>
+            <when expression="#[flowVars.destination==&quot;destination2&quot;]">
+                <file:outbound-endpoint path="C:\Users\EAI\Desktop\destination2" responseTimeout="10000" doc:name="destinatio2"/>
+                <set-payload value="files are in destination2" doc:name="Set Payload"/>
+            </when>
+            <otherwise>
+                <file:outbound-endpoint path="C:\Users\EAI\Desktop\destination3" responseTimeout="10000" doc:name="destination3"/>
+                <set-payload value="now files are in destination3" doc:name="Set Payload"/>
+            </otherwise>
+        </choice>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

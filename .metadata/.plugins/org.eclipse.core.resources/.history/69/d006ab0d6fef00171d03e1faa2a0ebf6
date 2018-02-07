@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: apdev-employee
+
+/flights:
+  get:
+    displayName: Get employee
+    queryParameters:
+      code:
+        displayName: required employee code
+        required: false
+    
+      responses:
+        200:
+          body:
+            application/json:           
+            example:!include examples/EmployeeExample.raml
+                   
+    
+
+                
+
+
+                

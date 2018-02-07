@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    
+    <spring:beans>
+    <spring:bean class="com.main.hello" name="wishes"></spring:bean>
+    </spring:beans>
+    <flow name="contentroutingFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
+        <set-variable variableName="value" value="#[message.inboundProperties.'http.query.params'.value]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.value==&quot;display1&quot;]">
+                <invoke object-ref="wishes" method="addition" doc:name="Invoke" methodArguments="#[message.inboundProperties.'http.query.params'.a],#[message.inboundProperties.'http.query.params'.b]"/>
+                <echo-component doc:name="Echo"/>
+            </when>
+            <otherwise>
+                <invoke object-ref="wishes" method="display1" doc:name="Invoke"/>
+                <echo-component doc:name="Echo"/>
+            </otherwise>
+        </choice>
+    </flow>
+</mule>

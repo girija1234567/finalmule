@@ -1,0 +1,44 @@
+#%RAML 1.0
+version: v1
+baseUri: https://mocksvc.mulesoft.com/mocks/747f44a9-c9b5-4a15-8911-53ee64baec44 # 
+title: Employee
+/employee:
+  get:
+   queryParameters:
+    code:
+   responses: 
+     200:
+       body: 
+         application/json:
+           example: |
+             [{"ID": 1,"age":20,"name":"girija",
+               "salary":30000},{"ID": 2,"age": "30",                                               "name": "chandana","salary":40000}]
+
+
+  post:
+    body: 
+      application/json:
+        example: |
+          {"age":30,"name":"knusa",
+               "salary":30000}
+
+      
+    responses: 
+      201:
+        body: 
+          application/json:
+            example:
+              {"message":"flight added(but not really)"}
+  /{ID}:
+   get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            example: |
+             {"ID": 1,"age":20,"name":"girija",
+               "salary":30000}
+
+
+
+

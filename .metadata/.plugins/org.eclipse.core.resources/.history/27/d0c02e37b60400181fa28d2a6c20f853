@@ -1,0 +1,9 @@
+package com.main;
+
+public class substraction {
+	int sub(int b)
+	{
+		return 18-b;
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration1" host="0.0.0.0" port="8080" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration2" host="0.0.0.0" port="8099" doc:name="HTTP Listener Configuration"/>
+    <flow name="base1Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
+        <set-variable variableName="a" value="#[message.inboundProperties.'http.query.params'.a]" doc:name="Variable"/>
+        <set-variable variableName="b" value="#[message.inboundProperties.'http.query.params'.b]" doc:name="Variable"/>
+        <set-variable variableName="operation" value="#[message.inboundProperties.'http.query.params'.operation]" doc:name="Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.operation==&quot;add&quot;]">
+                <flow-ref name="base1Flow1" doc:name="base1Flow1"/>
+                <set-payload value="addition wsdl" doc:name="Set Payload"/>
+            </when>
+            <otherwise>
+                <flow-ref name="base1Flow2" doc:name="base1Flow2"/>
+                <set-payload value="substraction wsdl" doc:name="Set Payload"/>
+            </otherwise>
+        </choice>
+    </flow>
+    <flow name="base1Flow1">
+        <http:listener config-ref="HTTP_Listener_Configuration1" path="/add" doc:name="HTTP"/>
+        <cxf:jaxws-service serviceClass="com.main.inter" doc:name="CXF"/>
+        <component class="com.main.implementation" doc:name="Java"/>
+    </flow>
+    <flow name="base1Flow2">
+        <http:listener config-ref="HTTP_Listener_Configuration2" path="/sub" doc:name="HTTP"/>
+        <cxf:jaxws-service serviceClass="com.main.sub" doc:name="CXF"/>
+        <component class="com.main.subimple" doc:name="Java"/>
+    </flow>
+</mule>
